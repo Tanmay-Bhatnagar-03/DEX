@@ -10,7 +10,7 @@ contract Exchange is ERC20 {
     // as it is responsible for minting and issuing LP Tokens
     constructor(address token) ERC20("ETH TOKEN LP Token", "lpETHTOKEN") {
         require(token != address(0), "Token address passed is a null address");
-        tokenAddress = token;
+        tokenAddress = token; 
     }
 
     // getReserve returns the balance of `token` held by `this` contract
